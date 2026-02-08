@@ -1,0 +1,38 @@
+name: Build LibAV Custom
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Emscripten
+      uses: mymindstorm/setup-emsdk@v12
+      with:
+        version: 3.1.40
+        actions-cache-folder: 'emsdk-cache'
+
+    - name: Verify Emscripten
+      run: emcc -v
+
+    - name: Build h264-aac-mp3
+      run: |
+        make build-h264-aac-mp3 -j$(nproc)
+
+    - name: List Artifacts
+      run: ls -lh dist/
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: libav-h264-aac-mp3
+        path: |
+          dist/libav-*-h264-aac-mp3.wasm.js
+          dist/libav-*-h264-aac-mp3.wasm.wasm
+          dist/libav-*-h264-aac-mp3.wasm.mjs
