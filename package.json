@@ -85,6 +85,11 @@
       "import": "./dist/libav-webcodecs-avf.mjs",
       "default": "./dist/libav-webcodecs-avf.js",
       "types": "./dist/libav.types.d.ts"
+    },
+    "./h264-aac-mp3": {
+      "import": "./dist/libav-h264-aac-mp3.mjs",
+      "default": "./dist/libav-h264-aac-mp3.js",
+      "types": "./dist/libav.types.d.ts"
     }
   },
   "directories": {
