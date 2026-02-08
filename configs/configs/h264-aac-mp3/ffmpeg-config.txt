@@ -1,1 +1,24 @@
---prefix=/opt/ffmpeg --target-os=none --enable-cross-compile --disable-x86asm --disable-inline-asm --disable-runtime-cpudetect --cc=emcc --ranlib=emranlib --disable-doc --disable-stripping --disable-programs --disable-ffplay --disable-ffprobe --disable-network --disable-iconv --disable-xlib --disable-sdl2 --disable-zlib --disable-everything --disable-pthreads --arch=emscripten --optflags=-Oz   --enable-protocol=data --enable-protocol=file --enable-protocol=jsfetch --enable-protocol=crypto --enable-filter=aresample --enable-filter=asetnsamples --enable-muxer=mp4 --enable-muxer=matroska --enable-demuxer=matroska --enable-demuxer=aac --enable-demuxer=hls --enable-demuxer=flv --enable-demuxer=dash --enable-muxer=hls --enable-parser=aac --enable-decoder=aac --enable-decoder=h264 --enable-parser=h264 --enable-bsf=h264_metadata --enable-bsf=extract_extradata --enable-demuxer=mpegts --enable-demuxer=mp3 --enable-demuxer=mov --enable-muxer=mp3 --enable-demuxer=webvtt --enable-demuxer=srt --enable-demuxer=ass --enable-decoder=mp3 --enable-libmp3lame --enable-encoder=libmp3lame --enable-libvpx --enable-parser=vp9 --enable-bsf=vp9_metadata --enable-bsf=opus_metadata --enable-decoder=libvpx_vp9 --enable-protocol=jsfetch --enable-ffmpeg --enable-ffprobe --enable-demuxer=ogg 
+--enable-protocol=data --enable-protocol=file
+--enable-demuxer=mov
+--enable-muxer=ipod
+--enable-muxer=mov
+--enable-muxer=mp4
+--enable-demuxer=aac
+--enable-muxer=adts
+--enable-demuxer=matroska
+--enable-muxer=matroska --enable-muxer=webm
+--enable-parser=aac
+--enable-decoder=aac
+--enable-encoder=aac
+--enable-parser=h264
+--enable-decoder=h264
+--enable-bsf=h264_metadata
+--enable-bsf=extract_extradata
+--enable-libopenh264
+--enable-decoder=libopenh264
+--enable-encoder=libopenh264
+--enable-demuxer=mp3
+--enable-muxer=mp3
+--enable-decoder=mp3
+--enable-libmp3lame
+--enable-encoder=libmp3lame
