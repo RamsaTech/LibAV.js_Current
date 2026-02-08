@@ -26,6 +26,7 @@
 --enable-protocol=crypto
 --enable-filter=aresample
 --enable-filter=asetnsamples
+--enable-swresample
 --enable-muxer=mp4
 --enable-muxer=matroska
 --enable-demuxer=matroska
