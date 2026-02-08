@@ -85,6 +85,7 @@ const configsRaw = [
 
     // Video reprobate:
     ["h264-aac", [libav, "format-mp4", "format-aac", "format-webm", aac, h264], {avf: true}],
+    ["h264-aac-mp3", [libav, "format-mp4", "format-aac", "format-webm", aac, h264, mp3], {avf: true}],
     ["hevc-aac", [libav, "format-mp4", "format-aac", "format-webm", aac, hevc], {avf: true}],
 
     // Mostly parsing:
