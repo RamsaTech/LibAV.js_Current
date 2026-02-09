@@ -8,9 +8,6 @@
 --ranlib=emranlib
 --disable-doc
 --disable-stripping
---disable-programs
---disable-ffplay
---disable-ffprobe
 --disable-network
 --disable-iconv
 --disable-xlib
