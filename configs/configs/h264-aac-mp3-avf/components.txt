@@ -6,3 +6,6 @@ avcodec
 avframe
 avfilter
 swscale
+cli
+avfilter
+swscale

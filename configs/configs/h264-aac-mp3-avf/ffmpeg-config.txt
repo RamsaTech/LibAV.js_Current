@@ -1,4 +1,7 @@
 --enable-protocol=data --enable-protocol=file
+--enable-swresample --enable-filter=aresample
+--enable-swscale --enable-filter=scale
+--enable-ffmpeg --enable-ffprobe
 --enable-demuxer=mov
 --enable-muxer=ipod
 --enable-muxer=mov

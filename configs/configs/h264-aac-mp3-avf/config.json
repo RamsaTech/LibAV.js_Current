@@ -1,1 +1,1 @@
-["avformat","avcodec","format-mp4","format-aac","format-webm","parser-aac","codec-aac","parser-h264","decoder-h264","codec-libopenh264","format-mp3","decoder-mp3","encoder-libmp3lame","avfilter","swresample","swscale","audio-filters","video-filters"]
+["avformat","avcodec","avfilter","swresample","swscale","cli","format-mp4","format-aac","format-webm","parser-aac","codec-aac","parser-h264","decoder-h264","codec-libopenh264","format-mp3","decoder-mp3","encoder-libmp3lame","avfilter","swresample","swscale","audio-filters","video-filters"]
